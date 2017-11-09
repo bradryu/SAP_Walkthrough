@@ -7,7 +7,7 @@
 				</sap.m:headerContent>
 				<sap.m:content>
 					<mvc:XMLView viewName="sap.ui.demo.wt.view.HelloPanel"/>
-					
+					<mvc:XMLView viewName="sap.ui.demo.wt.view.BankStatement"/>
 					<mvc:XMLView viewName="sap.ui.demo.wt.view.InvoiceList"/>
 				</sap.m:content>
 			</sap.m:Page>
