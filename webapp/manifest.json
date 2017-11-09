@@ -19,7 +19,7 @@
 				}
 			},
 			"bankStatement": {
-				"uri": "http//:eccqadev.hanwha-total.net:8010/sap/opu/odata/sap/zgtrd0010_SRV/",
+				"uri": "http://eccqadev.hanwha-total.net:8010/sap/opu/odata/sap/zgtrd0010_SRV/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0"
