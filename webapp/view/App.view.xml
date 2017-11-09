@@ -1,0 +1,16 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="sap.ui.demo.wt.controller.App">
+	<sap.m:App xmlns:sap.m="sap.m" id="__app0" class="myAppDemoWT">
+		<sap.m:pages>
+			<sap.m:Page title="{i18n>homePageTitle}" id="__page2">
+				<sap.m:headerContent>
+					<sap.m:Button id="__button0" press="onOpenDialog" icon="sap-icon://hello-world"/>
+				</sap.m:headerContent>
+				<sap.m:content>
+					<mvc:XMLView viewName="sap.ui.demo.wt.view.HelloPanel"/>
+					
+					<mvc:XMLView viewName="sap.ui.demo.wt.view.InvoiceList"/>
+				</sap.m:content>
+			</sap.m:Page>
+		</sap.m:pages>
+	</sap.m:App>
+</mvc:View>

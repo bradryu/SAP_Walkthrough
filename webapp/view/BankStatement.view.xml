@@ -1,0 +1,50 @@
+<mvc:View	
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Table items="{bankStatement>/TResultSet}">
+    <columns>
+      <Column>
+        <Text text="입금일" />
+      </Column>
+      <Column>
+        <Text text="은행ID" />
+      </Column>
+       <Column>
+        <Text text="계좌ID" />
+      </Column>
+      <Column>
+        <Text text="계좌번호" />
+      </Column>
+      <Column>
+        <Text text="통화" />
+      </Column>
+      <Column>
+        <Text text="입금액" />
+      </Column>
+      <Column>
+        <Text text="출금액" />
+      </Column>
+      <Column>
+        <Text text="잔액" />
+      </Column>
+    </columns>
+
+
+<items>
+      <ColumnListItem>
+        <cells>          
+          <Text text="{path : 'bankStatement>TrnxDate',
+                      type : 'sap.ui.model.type.Date'}"  />
+          <Text text="{bankStatement>Hbkid}" />
+          <Text text="{bankStatement>Hktid}" />
+          <Text text="{bankStatement>Acctno}" />
+          <Text text="{bankStatement>Waers}" />
+          <Text text="{bankStatement>Inamt}" />
+          <Text text="{bankStatement>Outamt}" />
+          <Text text="{bankStatement>Balamt}" />
+          
+        </cells>
+      </ColumnListItem>
+    </items>
+  </Table>
+</mvc:View>
